@@ -211,7 +211,7 @@
     renderCart();
     checkoutStatus.textContent = checkoutReady
       ? ""
-      : "Demo checkout is unavailable until the local site server is running.";
+      : "Order placement needs the Node server; it is unavailable on GitHub Pages.";
     document.getElementById("checkout-name").focus();
   }
 
@@ -227,12 +227,12 @@
       checkoutPayButton.disabled = !checkoutReady;
       renderCart();
       if (!checkoutReady) {
-        checkoutStatus.textContent = "Demo checkout is unavailable until the local site server is running.";
+        checkoutStatus.textContent = "Order placement needs the Node server; it is unavailable on GitHub Pages.";
       }
     } catch {
       checkoutReady = false;
       checkoutPayButton.disabled = true;
-      checkoutStatus.textContent = "Start the local site server to create a demo order.";
+      checkoutStatus.textContent = "Order placement needs the Node server; it is unavailable on GitHub Pages.";
     }
   }
 

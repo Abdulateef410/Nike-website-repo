@@ -165,9 +165,18 @@ async function handleRequest(request, response) {
   }
   const { pathname } = requestUrl;
 
-  if (pathname === "/" && request.method === "GET") {
-    response.writeHead(302, { Location: "/src/nike.html", "Cache-Control": "no-store" });
-    return response.end();
+  if ((pathname === "/" || pathname === "/index.html") && ["GET", "HEAD"].includes(request.method)) {
+    const indexFile = path.join(rootDirectory, "index.html");
+    try {
+      const stat = fs.statSync(indexFile);
+      if (request.method === "HEAD") {
+        response.writeHead(200, { "Content-Length": stat.size, "Cache-Control": "no-cache" });
+        return response.end();
+      }
+      return serveStaticFile(indexFile, response);
+    } catch {
+      return sendJson(response, 404, { error: "Not found." });
+    }
   }
   if (pathname === "/api/config" && request.method === "GET") {
     return sendJson(response, 200, {
