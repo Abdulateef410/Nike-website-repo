@@ -1,0 +1,23 @@
+{
+  "name": "new-tailwind",
+  "version": "1.0.0",
+  "description": "Nike Boutique Mart storefront with a demo checkout flow",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/styles.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./src/styles.css",
+    "start": "node --env-file-if-exists=.env server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  }
+}

@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nike Boutique Mart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop curated footwear, clothing, watches, and accessories at Nike Boutique Mart in Apete, Ibadan, Oyo State, Nigeria.">
+  <link href="./styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="icon"  href="/src/img/favicon_io/favicon.ico">
+  </head>
+<body>
+  <!-- Responsive primary navigation -->
+  <nav aria-label="Main navigation" class="nav-bar fixed inset-x-0 top-0 z-50 bg-pink-700 shadow-lg">
+    <div class="mx-auto flex w-full max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+      <a href="#Home" class="shrink-0 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" aria-label="Nike Boutique Mart home">
+        <img src="/src/img/Nike_Logo_Decal_Sticker_-_NIKE-LOGO_-_Thriftysigns-removebg-preview.png" alt="Nike Boutique Mart" class="h-11 w-auto max-w-24 object-contain sm:h-12">
+      </a>
+
+      <div id="primary-navigation" class="absolute left-0 right-0 top-full hidden border-t border-white/15 bg-pink-700 px-4 py-4 shadow-lg sm:px-6 lg:static lg:ml-auto lg:flex lg:flex-1 lg:justify-center lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
+        <ul class="flex flex-col gap-1 font-poppins text-sm font-semibold text-white lg:flex-row lg:items-center lg:justify-center lg:gap-1 xl:gap-2">
+          <li><a href="#Home" class="block whitespace-nowrap rounded-lg px-3 py-2 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Home</a></li>
+          <li><a href="#About-Us" class="block whitespace-nowrap rounded-lg px-3 py-2 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">About Us</a></li>
+          <li><a href="#Brands" class="block whitespace-nowrap rounded-lg px-3 py-2 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Brands</a></li>
+          <li><a href="#Collections" class="block whitespace-nowrap rounded-lg px-3 py-2 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Collections</a></li>
+          <li><a href="#Services" class="block whitespace-nowrap rounded-lg px-3 py-2 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Services</a></li>
+          <li><a href="#Contact-Us" class="block whitespace-nowrap rounded-lg px-3 py-2 transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="flex shrink-0 items-center gap-2">
+        <button id="cart-open" type="button" aria-haspopup="dialog" aria-controls="shopping-cart" aria-expanded="false" aria-label="Open shopping cart, 0 items" class="inline-flex h-11 cursor-pointer items-center gap-2 rounded-full bg-white px-3 text-sm font-bold text-pink-700 shadow-sm transition-colors hover:bg-pink-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:px-4">
+          Cart <i class="bi bi-bag-check text-lg" aria-hidden="true"></i>
+          <span id="cart-count" class="inline-flex min-w-6 items-center justify-center rounded-full bg-pink-700 px-1.5 py-0.5 text-xs font-bold text-white" aria-hidden="true" hidden>0</span>
+        </button>
+        <button id="mobile-menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/30 bg-white/10 text-white transition-colors hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white lg:hidden">
+          <i id="mobile-menu-open-icon" class="bi bi-list text-2xl" aria-hidden="true"></i>
+          <i id="mobile-menu-close-icon" class="bi bi-x-lg hidden text-xl" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- Home hero section -->
+  <section id="Home" class="min-h-svh scroll-mt-20 mx-auto flex max-w-7xl flex-col items-center justify-center gap-5 px-5 pb-6 pt-24 sm:gap-8 sm:px-6 md:flex-row md:justify-between md:gap-8 lg:gap-16 lg:px-8">
+    <div class="w-full min-w-0 flex-1 md:w-1/2 lg:max-w-xl">
+      <p class="mb-2.5 font-poppins text-sm text-gray-500">Our Summer Collections</p>
+      <h1 class="font-poppins text-4xl font-bold leading-tight text-pink-600 sm:text-5xl lg:text-6xl">
+        Nike Boutique<br><span class="text-pink-300">Mart.</span>
+      </h1>
+      <p class="mt-4 max-w-xl font-poppins text-sm leading-relaxed text-gray-600 sm:text-base">
+        Discover clothing, footwear, and accessories for every style. Find seasonal favorites and designer looks at Nike Boutique Mart.
+      </p>
+      <a href="#Collections" class="mt-5 inline-flex min-h-11 items-center justify-center gap-3 rounded-full bg-pink-300 px-7 py-2.5 font-poppins font-bold text-gray-900 transition-colors hover:bg-pink-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-pink-700">
+        Shop now <i class="bi bi-cart3 text-xl" aria-hidden="true"></i>
+      </a>
+
+      <div class="mt-6 grid w-full max-w-md grid-cols-3 gap-2 sm:gap-4 lg:mt-8">
+        <div class="text-center">
+          <p class="whitespace-nowrap font-poppins text-xl font-bold text-gray-900 sm:text-2xl lg:text-3xl">1k+</p>
+          <p class="mt-1 whitespace-nowrap font-poppins text-[0.7rem] text-gray-500 sm:text-xs">Brands</p>
+        </div>
+        <div class="text-center">
+          <p class="whitespace-nowrap font-poppins text-xl font-bold text-gray-900 sm:text-2xl lg:text-3xl">500+</p>
+          <p class="mt-1 whitespace-nowrap font-poppins text-[0.7rem] text-gray-500 sm:text-xs">Shops</p>
+        </div>
+        <div class="text-center">
+          <p class="whitespace-nowrap font-poppins text-xl font-bold text-gray-900 sm:text-2xl lg:text-3xl">250k+</p>
+          <p class="mt-1 whitespace-nowrap font-poppins text-[0.7rem] text-gray-500 sm:text-xs">Customers</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex w-full max-w-md flex-1 items-center justify-center md:w-1/2">
+      <img src="/src/img/Red_sneakers_Cut_out_on_transparent-removebg-preview.png" alt="Red, black, and white featured sneaker" class="block h-auto max-h-[28svh] w-full max-w-sm object-contain sm:max-h-[34svh] sm:max-w-md md:max-h-[min(60svh,30rem)]">
+    </div>
+  </section>
+  <!---About section layout-->
+  <section id="About-Us" class="scroll-mt-20 px-10 md:px-20 py-32 min-h-[70vh] bg-[url('img/man.jpg')] bg-cover bg-center bg-no-repeat flex flex-col justify-center relative">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10">
+      <h2 class="text-5xl text-white font-bold font-lato">About Us</h2>
+      <p class="pt-6 text-xl md:text-2xl font-semibold text-white max-w-4xl leading-relaxed">
+        Nike Boutique is a premier fashion destination dedicated to curating a sophisticated collection of timeless elegance and modern trends. Our mission is to empower individuals through high-quality, handpicked apparel.
+      </p>
+    </div>
+  </section>
+<!---Brands section layout-->
+<section id="Brands" class="scroll-mt-20 px-10 md:px-20 py-20">
+    <h2 class="text-5xl text-pink-600 font-bold text-center pt-15">Our Brands</h2>
+    <p class="pt-6 text-lg font-semibold text-gray-500 text-center font-poppins max-w-3xl mx-auto">
+      At Nike Boutique, we take pride in offering a curated selection of renowned brands that embody quality, style, and innovation.
+    </p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mt-10 place-items-center">
+      <img src="img/Puma_discount_code_offers___deals__Up_to_60__off_in_October_2025-removebg-preview.png" alt="Puma" class="w-32 h-auto grayscale hover:grayscale-0 transition-all">
+      <img src="img/Nike_Logo_Decal_Sticker_-_NIKE-LOGO_-_Thriftysigns-removebg-preview.png" alt="Nike" class="w-32 h-auto grayscale hover:grayscale-0 transition-all">
+      <img src="img/How_Did_The_Medusa_Come_To_Represent_Versace_Logo_-removebg-preview (1).png" alt="Versace" class="w-32 h-auto grayscale hover:grayscale-0 transition-all">
+      <img src="img/Dior__1_-removebg-preview.png" alt="Dior" class="w-32 h-auto grayscale hover:grayscale-0 transition-all">
+      <img src="img/Louis_Vuitton_Logo-removebg-preview.png" alt="LV" class="w-32 h-auto grayscale hover:grayscale-0 transition-all">
+      <img src="img/Gucci_Decal_Sticker-removebg-preview.png" alt="Gucci" class="w-32 h-auto grayscale hover:grayscale-0 transition-all">
+      <img src="img/Chanel_Prada_Marfa_Fashion_Gucci_PNG-removebg-preview.png" alt="Chanel" class="w-32 h-auto grayscale hover:grayscale-0 transition-all">
+      <img src="img/Free_Transparent_PNG_-_Originals_Adidas_Smith_Stan_Logo_Store-removebg-preview (1).png" alt="Adidas" class="w-32 h-auto grayscale hover:grayscale-0 transition-all">
+    </div>
+  </section>
+<!--Collections styling layout-->
+<section id="Collections" class="scroll-mt-20 px-10 md:px-20 lg:px-32 py-20 bg-gray-50">
+  <div class="text-center mb-16">
+    <h2 class="text-4xl md:text-5xl text-pink-600 font-bold font-poppins pt-10">Featured Collections</h2>
+    <p class="pt-6 text-lg font-medium text-gray-500 font-poppins max-w-2xl mx-auto">
+      Explore our diverse range of collections, each thoughtfully curated to cater to your unique style. From timeless classics to cutting-edge trends.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-10">
+    
+    <div id="product-watches" class="scroll-mt-24 flex flex-col items-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+      <div class="h-64 w-full flex items-center justify-center overflow-hidden">
+        <img src="img/Amazon_com__Mini_Focus_Herren-Armbanduhr__modisch_-removebg-preview.png" 
+            alt="Blue chronograph wristwatch with a silicone strap" 
+             class="w-48 h-auto object-contain transform group-hover:scale-110 transition-transform duration-500">
+      </div>
+      
+      <div class="text-center mt-6">
+        <h3 class="font-bold text-2xl font-poppins text-gray-800">Chronograph Watch</h3>
+        <p class="mt-2 font-semibold text-gray-700"><span data-product-price="Watches"></span></p>
+        <div class="mt-6">
+          <button type="button" data-cart-add="Watches" class="mx-auto w-fit justify-center bg-pink-300 text-gray-900 hover:bg-pink-600 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700 font-bold rounded-full px-8 py-3 flex items-center gap-3 transition-colors duration-300">
+            Buy Now <i class="bi bi-cart3 text-xl text-current" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="product-sneakers" class="scroll-mt-24 flex flex-col items-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+      <div class="h-64 w-full flex items-center justify-center overflow-hidden">
+        <img src="img/Red_sneakers_Cut_out_on_transparent-removebg-preview.png" 
+            alt="Single red, white, and black athletic sneaker" 
+             class="w-48 h-auto object-contain transform group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="text-center mt-6">
+        <h3 class="font-bold text-2xl font-poppins text-gray-800">Red and White Sneakers</h3>
+        <p class="mt-2 font-semibold text-gray-700"><span data-product-price="Sneakers"></span></p>
+        <div class="mt-6">
+          <button type="button" data-cart-add="Sneakers" class="mx-auto w-fit justify-center bg-pink-300 text-gray-900 hover:bg-pink-600 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700 font-bold rounded-full px-8 py-3 flex items-center gap-3 transition-colors duration-300">
+            Buy Now <i class="bi bi-cart3 text-xl text-current" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div> 
+    </div>
+
+    <div id="product-hoodies" class="scroll-mt-24 flex flex-col items-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+      <div class="h-64 w-full flex items-center justify-center overflow-hidden">
+        <img src="img/GEEK_LIGHTING_Hoodies_for_Men_Sweatshirts_Zip_Up_-removebg-preview.png" 
+            alt="Black zip-up hoodie with a fleece lining" 
+            class="w-48 h-auto object-contain transform group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="text-center mt-6">
+        <h3 class="font-bold text-2xl font-poppins text-gray-800">Fleece-Lined Zip Hoodie</h3>
+        <p class="mt-2 font-semibold text-gray-700"><span data-product-price="Hoodies"></span></p>
+        <div class="mt-6">
+          <button type="button" data-cart-add="Hoodies" class="mx-auto w-fit justify-center bg-pink-300 text-gray-900 hover:bg-pink-600 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700 font-bold rounded-full px-8 py-3 flex items-center gap-3 transition-colors duration-300">
+            Buy Now <i class="bi bi-cart3 text-xl text-current" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="product-sunglasses" class="scroll-mt-24 flex flex-col items-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+      <div class="h-64 w-full flex items-center justify-center overflow-hidden">
+        <img src="img/sunglasses-removebg-preview.png" 
+            alt="Black rectangular sunglasses with gray lenses and gold accents" 
+            class="w-48 h-auto object-contain transform group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="text-center mt-6">
+        <h3 class="font-bold text-2xl font-poppins text-gray-800">Black Frame Sunglasses</h3>
+        <p class="mt-2 font-semibold text-gray-700"><span data-product-price="Sunglass"></span></p>
+        <div class="mt-6">
+          <button type="button" data-cart-add="Sunglass" class="mx-auto w-fit justify-center bg-pink-300 text-gray-900 hover:bg-pink-600 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700 font-bold rounded-full px-8 py-3 flex items-center gap-3 transition-colors duration-300">
+            Buy Now <i class="bi bi-cart3 text-xl text-current" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="product-trainer" class="scroll-mt-24 flex flex-col items-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+      <div class="h-64 w-full flex items-center justify-center overflow-hidden">
+        <img src="img/Louis_Vuitton_LV_Trainers_Monogram_Denim__Blue_-removebg-preview.png" 
+            alt="Blue and white monogram trainer sneakers" 
+            class="w-48 h-auto object-contain transform group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="text-center mt-6">
+        <h3 class="font-bold text-2xl font-poppins text-gray-800">Blue Monogram Trainers</h3>
+        <p class="mt-2 font-semibold text-gray-700"><span data-product-price="Trainer"></span></p>
+        <div class="mt-6">
+          <button type="button" data-cart-add="Trainer" class="mx-auto w-fit justify-center bg-pink-300 text-gray-900 hover:bg-pink-600 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700 font-bold rounded-full px-8 py-3 flex items-center gap-3 transition-colors duration-300">
+            Buy Now <i class="bi bi-cart3 text-xl text-current" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="product-shoe" class="scroll-mt-24 flex flex-col items-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+      <div class="h-64 w-full flex items-center justify-center overflow-hidden">
+        <img src="img/VERSACE_-_Black_Perforated_Leather_Oxfords-removebg-preview.png" 
+            alt="Pair of black leather Oxford dress shoes" 
+            class="w-48 h-auto object-contain transform group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="text-center mt-6">
+        <h3 class="font-bold text-2xl font-poppins text-gray-800">Black Leather Oxford Shoes</h3>
+        <p class="mt-2 font-semibold text-gray-700"><span data-product-price="Shoe"></span></p>
+        <div class="mt-6">
+          <button type="button" data-cart-add="Shoe" class="mx-auto w-fit justify-center bg-pink-300 text-gray-900 hover:bg-pink-600 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700 font-bold rounded-full px-8 py-3 flex items-center gap-3 transition-colors duration-300">
+            Buy Now <i class="bi bi-cart3 text-xl text-current" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="product-cap" class="scroll-mt-24 flex flex-col items-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+      <div class="h-64 w-full flex items-center justify-center overflow-hidden">
+        <img src="img/Oakland_Athletics_Cursive_59FIFTY_Fitted___Oakland_-removebg-preview.png" 
+            alt="Dark green Oakland A's fitted baseball cap" 
+            class="w-48 h-auto object-contain transform group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="text-center mt-6">
+        <h3 class="font-bold text-2xl font-poppins text-gray-800">Oakland A's Fitted Cap</h3>
+        <p class="mt-2 font-semibold text-gray-700"><span data-product-price="Cap"></span></p>
+        <div class="mt-6">
+          <button type="button" data-cart-add="Cap" class="mx-auto w-fit justify-center bg-pink-300 text-gray-900 hover:bg-pink-600 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700 font-bold rounded-full px-8 py-3 flex items-center gap-3 transition-colors duration-300">
+            Buy Now <i class="bi bi-cart3 text-xl text-current" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="product-shirt" class="scroll-mt-24 flex flex-col items-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+      <div class="h-64 w-full flex items-center justify-center overflow-hidden">
+        <img src="img/Men_Floral_Print_Ombre_Shirt_Without_Tee-removebg-preview.png" 
+            alt="White and black floral print short-sleeve shirt" 
+            class="w-48 h-auto object-contain transform group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="text-center mt-6">
+        <h3 class="font-bold text-2xl font-poppins text-gray-800">Floral Print Short-Sleeve Shirt</h3>
+        <p class="mt-2 font-semibold text-gray-700"><span data-product-price="Shirt"></span></p>
+        <div class="mt-6">
+          <button type="button" data-cart-add="Shirt" class="mx-auto w-fit justify-center bg-pink-300 text-gray-900 hover:bg-pink-600 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700 font-bold rounded-full px-8 py-3 flex items-center gap-3 transition-colors duration-300">
+            Buy Now <i class="bi bi-cart3 text-xl text-current" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="product-backpack" class="scroll-mt-24 flex flex-col items-center bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 group">
+      <div class="h-64 w-full flex items-center justify-center overflow-hidden">
+        <img src="img/23_Valentine_s_Day_Gift_Ideas_For_Your_Picky_S_O_-removebg-preview.png" 
+            alt="Olive green canvas backpack with a flap top" 
+            class="w-48 h-auto object-contain transform group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="text-center mt-6">
+        <h3 class="font-bold text-2xl font-poppins text-gray-800">Olive Canvas Backpack</h3>
+        <p class="mt-2 font-semibold text-gray-700"><span data-product-price="Backpack"></span></p>
+        <div class="mt-6">
+          <button type="button" data-cart-add="Backpack" class="mx-auto w-fit justify-center bg-pink-300 text-gray-900 hover:bg-pink-600 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700 font-bold rounded-full px-8 py-3 flex items-center gap-3 transition-colors duration-300">
+            Buy Now <i class="bi bi-cart3 text-xl text-current" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+<section id="Services" class="scroll-mt-20 px-10 md:px-20 py-30 bg-white">
+  <div class="text-center mb-16">
+  <h2 class="text-4xl md:text-5xl text-pink-600 font-bold font-poppins">Our Services</h2>
+    <p class="pt-4 text-gray-500 font-poppins max-w-2xl mx-auto">
+      We go beyond just fashion. We provide a seamless shopping experience designed around your convenience and satisfaction.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    
+    <div class="flex flex-col items-center p-8 rounded-2xl border border-gray-100 hover:border-pink-300 transition-all duration-300 group">
+      <div class="w-20 h-20 bg-pink-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-pink-600 transition-colors duration-300">
+        <i class="bi bi-truck text-4xl text-pink-600 group-hover:text-white"></i>
+      </div>
+      <h3 class="text-center text-xl font-bold font-poppins mb-3">Fast Delivery</h3>
+      <p class="text-gray-500 text-center text-sm leading-relaxed">
+        Swift and reliable delivery service ensuring your fashion pieces reach you in record time.
+      </p>
+    </div>
+
+    <div class="flex flex-col items-center p-8 rounded-2xl border border-gray-100 hover:border-pink-300 transition-all duration-300 group">
+      <div class="w-20 h-20 bg-pink-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-pink-600 transition-colors duration-300">
+        <i class="bi bi-tags text-4xl text-pink-600 group-hover:text-white"></i>
+      </div>
+      <h3 class="text-center text-xl font-bold font-poppins mb-3">Amazing Discounts</h3>
+      <p class="text-gray-500 text-center text-sm leading-relaxed">
+        Get premium designer wears at competitive prices with our exclusive seasonal offers.
+      </p>
+    </div>
+
+    <div class="flex flex-col items-center p-8 rounded-2xl border border-gray-100 hover:border-pink-300 transition-all duration-300 group">
+      <div class="w-20 h-20 bg-pink-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-pink-600 transition-colors duration-300">
+        <i class="bi bi-arrow-left-right text-4xl text-pink-600 group-hover:text-white"></i>
+      </div>
+      <h3 class="text-center text-xl font-bold font-poppins mb-3">Easy Returns</h3>
+      <p class="text-gray-500 text-center text-sm leading-relaxed">
+        Not the perfect fit? Our hassle-free return policy ensures a smooth exchange or refund.
+      </p>
+    </div>
+
+    <div class="flex flex-col items-center p-8 rounded-2xl border border-gray-100 hover:border-pink-300 transition-all duration-300 group">
+      <div class="w-20 h-20 bg-pink-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-pink-600 transition-colors duration-300">
+        <i class="bi bi-headset text-4xl text-pink-600 group-hover:text-white"></i>
+      </div>
+      <h3 class="text-center text-xl font-bold font-poppins mb-3">24/7 Service</h3>
+      <p class="text-gray-500 text-center text-sm leading-relaxed">
+        Our dedicated support team is available around the clock to assist with your inquiries.
+      </p>
+    </div>
+
+  </div>
+</section>
+<section id="Contact-Us" class="scroll-mt-20 px-10 md:px-20 py-24 bg-gray-50">
+  <div class="text-center mb-16">
+    <h2 class="text-4xl md:text-5xl text-pink-600 font-bold font-poppins">Get In Touch</h2>
+    <p class="pt-4 text-gray-500 font-poppins">Have questions or need assistance? Reach out to the Nike Boutique Mart team.</p>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+    
+    <div class="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100">
+      <form id="contact-form" data-email-draft-form data-recipient="abdulateefg4@gamail.com" data-subject="Website contact request" class="space-y-6">
+        <div>
+          <label for="contact-name" class="block text-gray-700 font-bold mb-2 ml-1">Full Name</label>
+          <div class="relative">
+            <i class="bi bi-person absolute left-4 top-1/2 -translate-y-1/2 text-pink-600"></i>
+            <input id="contact-name" name="name" type="text" autocomplete="name" required placeholder="Your name" 
+              class="w-full pl-12 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-pink-600 focus:ring-1 focus:ring-pink-600 transition-all">
+          </div>
+        </div>
+
+        <div>
+          <label for="contact-email" class="block text-gray-700 font-bold mb-2 ml-1">Email Address</label>
+          <div class="relative">
+            <i class="bi bi-envelope absolute left-4 top-1/2 -translate-y-1/2 text-pink-600"></i>
+            <input id="contact-email" name="email" type="email" autocomplete="email" required placeholder="example@mail.com" 
+              class="w-full pl-12 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-pink-600 focus:ring-1 focus:ring-pink-600 transition-all">
+          </div>
+        </div>
+
+        <div>
+          <label for="contact-message" class="block text-gray-700 font-bold mb-2 ml-1">Message</label>
+          <div class="relative">
+            <i class="bi bi-chat-left-text absolute left-4 top-4 text-pink-600"></i>
+            <textarea id="contact-message" name="message" required rows="4" placeholder="How can we help you today?" 
+              class="w-full pl-12 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-pink-600 focus:ring-1 focus:ring-pink-600 transition-all"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full bg-pink-600 text-white font-bold py-4 rounded-xl hover:bg-black transition-all duration-300 shadow-lg flex items-center justify-center gap-3">
+          Open email to send <i class="bi bi-send" aria-hidden="true"></i>
+        </button>
+        <p id="contact-form-status" class="text-sm text-gray-500" role="status" aria-live="polite">Submitting opens your email app to send the message.</p>
+      </form>
+    </div>
+
+    <div class="flex flex-col justify-center space-y-12">
+      <div>
+        <h3 class="text-3xl font-bold text-gray-800 mb-6 font-poppins">Contact Information</h3>
+        <p class="text-gray-500 leading-relaxed">
+          Whether you're inquiring about our latest collections or need help with an order, our team is ready to assist you.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        <div class="flex items-center gap-6 group">
+          <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-pink-600 transition-colors">
+            <i class="bi bi-geo-alt text-2xl text-pink-600 group-hover:text-white"></i>
+          </div>
+          <div>
+            <p class="text-sm text-gray-400 font-bold uppercase tracking-wider">Our Location</p>
+            <p class="text-lg text-gray-800 font-semibold">Okeodo, Onikoko Arola, Apete, Ibadan, Oyo State, Nigeria</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6 group">
+          <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-pink-600 transition-colors">
+            <i class="bi bi-envelope-check text-2xl text-pink-600 group-hover:text-white"></i>
+          </div>
+          <div>
+            <p class="text-sm text-gray-400 font-bold uppercase tracking-wider">Email Us</p>
+            <a href="mailto:abdulateefg4@gamail.com" class="text-lg text-gray-800 font-semibold hover:text-pink-700">abdulateefg4@gamail.com</a>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6 group">
+          <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-pink-600 transition-colors">
+            <i class="bi bi-telephone-outbound text-2xl text-pink-600 group-hover:text-white"></i>
+          </div>
+          <div>
+            <p class="text-sm text-gray-400 font-bold uppercase tracking-wider">Call Support</p>
+            <a href="tel:+2348051198566" class="text-lg text-gray-800 font-semibold hover:text-pink-700">08051198566</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-4">
+        <p class="text-gray-800 font-bold mb-4">Social profiles</p>
+        <div class="flex gap-4 text-gray-400" aria-hidden="true">
+          <span class="w-10 h-10 border border-gray-200 rounded-full flex items-center justify-center"><i class="bi bi-instagram"></i></span>
+          <span class="w-10 h-10 border border-gray-200 rounded-full flex items-center justify-center"><i class="bi bi-facebook"></i></span>
+          <span class="w-10 h-10 border border-gray-200 rounded-full flex items-center justify-center"><i class="bi bi-twitter-x"></i></span>
+        </div>
+        <p class="mt-2 text-sm text-gray-500">Profile links will be added when the business accounts are available.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<footer class="bg-[#212934] pt-16 pb-8 px-10 md:px-20 lg:px-32 font-poppins text-gray-300">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-gray-700 pb-12">
+    
+    <div class="space-y-6">
+      <h2 class="text-3xl font-bold text-pink-600">Nike Boutique Mart</h2>
+      <ul class="space-y-4">
+        <li class="flex items-center gap-3">
+          <i class="bi bi-geo-alt text-pink-500"></i>
+          <span>Okeodo, Onikoko Arola, Apete, Ibadan, Oyo State, Nigeria</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <i class="bi bi-telephone text-pink-500" aria-hidden="true"></i>
+          <a href="tel:+2348051198566" class="hover:text-white transition-colors">08051198566</a>
+        </li>
+        <li class="flex items-center gap-3">
+          <i class="bi bi-envelope text-pink-500" aria-hidden="true"></i>
+          <a href="mailto:abdulateefg4@gamail.com" class="hover:text-white transition-colors">abdulateefg4@gamail.com</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="space-y-6">
+      <h3 class="text-xl font-bold text-white border-b-2 border-gray-700 pb-2 w-fit">Products</h3>
+      <ul class="space-y-3">
+        <li><a href="#product-watches" class="hover:text-pink-500 transition-colors">Watches</a></li>
+        <li><a href="#product-sneakers" class="hover:text-pink-500 transition-colors">Sneakers</a></li>
+        <li><a href="#product-shoe" class="hover:text-pink-500 transition-colors">Dress shoes</a></li>
+        <li><a href="#product-shirt" class="hover:text-pink-500 transition-colors">Shirts</a></li>
+        <li><a href="#product-backpack" class="hover:text-pink-500 transition-colors">Backpacks</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-6">
+      <h3 class="text-xl font-bold text-white border-b-2 border-gray-700 pb-2 w-fit">Further Info</h3>
+      <ul class="space-y-3">
+        <li><a href="#Home" class="hover:text-pink-500 transition-colors">Home</a></li>
+        <li><a href="#About-Us" class="hover:text-pink-500 transition-colors">About Us</a></li>
+        <li><a href="#Collections" class="hover:text-pink-500 transition-colors">Collections</a></li>
+        <li><a href="#Contact-Us" class="hover:text-pink-500 transition-colors">Customer support</a></li>
+        <li><a href="#Contact-Us" class="hover:text-pink-500 transition-colors">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="flex flex-col lg:flex-row justify-between items-center pt-10 gap-8">
+    <div class="flex gap-4 text-gray-400" aria-hidden="true">
+      <span class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center"><i class="bi bi-facebook"></i></span>
+      <span class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center"><i class="bi bi-instagram"></i></span>
+      <span class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center"><i class="bi bi-twitter-x"></i></span>
+      <span class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center"><i class="bi bi-linkedin"></i></span>
+    </div>
+
+    <form id="newsletter-form" data-email-draft-form data-status-id="newsletter-status" data-recipient="abdulateefg4@gamail.com" data-subject="Newsletter subscription request" class="flex w-full lg:w-auto">
+      <label for="newsletter-email" class="sr-only">Email address for newsletter updates</label>
+      <input id="newsletter-email" name="email" type="email" autocomplete="email" required placeholder="Email address" 
+        class="bg-[#1d242d] border border-gray-700 text-white px-4 py-2 rounded-l-md focus:outline-none focus:border-pink-600 w-full lg:w-64">
+      <button type="submit" class="bg-pink-600 text-white px-6 py-2 rounded-r-md font-bold hover:bg-pink-700 transition-colors">
+        Request updates
+      </button>
+    </form>
+    <p id="newsletter-status" class="sr-only" role="status" aria-live="polite">Submitting opens your email app to request newsletter updates.</p>
+  </div>
+
+  <div class="text-center pt-12 text-sm text-gray-500">
+    <p>Copyright &copy; 2026 Nike Boutique Mart | Designed by Dev Abdul</p>
+  </div>
+</footer>
+<dialog id="shopping-cart" aria-labelledby="shopping-cart-title" class="cart-drawer">
+  <div class="cart-drawer__content p-4 sm:p-5">
+    <div class="cart-drawer__header mb-3 flex items-start justify-between gap-4">
+      <div>
+        <h2 id="shopping-cart-title" class="text-2xl font-bold font-poppins">Your cart</h2>
+        <p class="mt-1 text-xs text-gray-500">Review items and enter delivery details.</p>
+      </div>
+      <button id="cart-close" type="button" aria-label="Close shopping cart" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gray-100 text-gray-700 transition-colors hover:bg-gray-200">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <p id="cart-status" class="sr-only" aria-live="polite"></p>
+    <div class="cart-drawer__items">
+      <div id="cart-view">
+        <div id="cart-empty" class="rounded-2xl bg-gray-50 px-6 py-10 text-center">
+          <i class="bi bi-bag text-4xl text-pink-600" aria-hidden="true"></i>
+          <p class="mt-3 text-lg font-bold">Your cart is empty</p>
+          <p class="mt-1 text-sm text-gray-500">Choose a collection and add it here to get started.</p>
+          <button id="cart-continue-empty" type="button" class="mt-6 rounded-full bg-pink-600 px-6 py-3 font-bold text-white transition-colors hover:bg-pink-700">Browse collections</button>
+        </div>
+
+        <ul id="cart-items" class="divide-y divide-gray-100" aria-live="polite" aria-relevant="all"></ul>
+      </div>
+
+      <section id="checkout-details" aria-labelledby="checkout-details-title" hidden>
+        <h3 id="checkout-details-title" class="mb-2 text-lg font-bold font-poppins">Delivery details</h3>
+        <p class="mb-2 rounded-lg bg-amber-50 px-2.5 py-2 text-xs leading-4 text-amber-900">Demo only: no payment is taken and your details are not saved.</p>
+        <form id="checkout-form" class="space-y-2">
+          <div>
+            <label for="checkout-name" class="mb-0.5 block text-xs font-semibold text-gray-700">Full name</label>
+            <input id="checkout-name" name="name" type="text" autocomplete="name" required class="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-800 focus:border-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600">
+          </div>
+          <div>
+            <label for="checkout-email" class="mb-0.5 block text-xs font-semibold text-gray-700">Email address</label>
+            <input id="checkout-email" name="email" type="email" autocomplete="email" required class="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-800 focus:border-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600">
+          </div>
+          <div>
+            <label for="checkout-phone" class="mb-0.5 block text-xs font-semibold text-gray-700">Phone number</label>
+            <input id="checkout-phone" name="phone" type="tel" autocomplete="tel" required class="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-800 focus:border-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600">
+          </div>
+          <div>
+            <label for="checkout-address" class="mb-0.5 block text-xs font-semibold text-gray-700">Delivery address</label>
+            <textarea id="checkout-address" name="address" autocomplete="street-address" rows="2" required class="w-full resize-y rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-800 focus:border-pink-600 focus:outline-none focus:ring-1 focus:ring-pink-600"></textarea>
+          </div>
+          <p id="checkout-status" class="text-sm text-red-700" role="status" aria-live="polite"></p>
+        </form>
+        <div id="checkout-confirmation" class="rounded-xl bg-green-50 p-4 text-green-900" hidden>
+          <i class="bi bi-check-circle-fill text-2xl" aria-hidden="true"></i>
+          <h4 class="mt-2 text-lg font-bold">Demo order complete</h4>
+          <p class="mt-1 text-sm">This was a preview. No payment was taken and no personal details were saved.</p>
+          <dl class="mt-4 space-y-2 text-sm">
+            <div class="flex justify-between gap-3"><dt>Demo reference</dt><dd id="demo-reference" class="font-semibold"></dd></div>
+            <div class="flex justify-between gap-3"><dt>Preview total</dt><dd id="demo-total" class="font-semibold"></dd></div>
+          </dl>
+          <button id="demo-done" type="button" class="mt-4 w-full rounded-lg bg-green-800 px-4 py-2.5 font-semibold text-white hover:bg-green-900">Done</button>
+        </div>
+      </section>
+    </div>
+
+    <div id="cart-summary" class="cart-drawer__summary mt-4 border-t border-gray-100 pt-4" hidden>
+        <dl class="space-y-1 text-sm">
+        <div class="flex justify-between gap-4"><dt class="text-gray-600">Subtotal</dt><dd id="cart-subtotal" class="font-semibold text-gray-800"></dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-gray-600">Delivery fee</dt><dd id="cart-delivery" class="font-semibold text-gray-800">Loading...</dd></div>
+      </dl>
+      <div class="mt-2 flex justify-between gap-4 border-t border-gray-100 pt-2 font-bold"><span>Total</span><span id="cart-total"></span></div>
+      <button id="checkout-start" type="button" class="mt-4 flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-pink-600 px-6 py-3 font-bold text-white transition-colors hover:bg-pink-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700">
+        Continue to checkout <i class="bi bi-arrow-right" aria-hidden="true"></i>
+      </button>
+      <button id="cart-continue" type="button" class="mt-2 w-full rounded-full px-6 py-2 font-semibold text-gray-600 transition-colors hover:bg-gray-100">Continue shopping</button>
+    </div>
+
+    <div id="checkout-summary" class="cart-drawer__summary mt-4 border-t border-gray-100 pt-4" hidden>
+      <div class="flex justify-between gap-4 font-bold"><span>Total</span><span id="checkout-total"></span></div>
+      <button id="checkout-pay" type="submit" form="checkout-form" class="mt-4 flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-pink-600 px-6 py-3 font-bold text-white transition-colors hover:bg-pink-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-700 disabled:cursor-not-allowed disabled:opacity-60">
+        <span id="checkout-pay-label">Place demo order</span> <i class="bi bi-check2-circle" aria-hidden="true"></i>
+      </button>
+      <button id="checkout-back" type="button" class="mt-2 w-full rounded-full px-6 py-2 font-semibold text-gray-600 transition-colors hover:bg-gray-100">Back to cart</button>
+    </div>
+  </div>
+</dialog>
+<script src="./products.js" defer></script>
+<script src="./cart.js" defer></script>
+<script src="./nav.js" defer></script>
+<script src="./forms.js" defer></script>
+</body>
+</html>
